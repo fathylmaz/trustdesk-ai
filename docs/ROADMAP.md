@@ -16,10 +16,14 @@ Bu dosya, **yerel olarak doğrulanan işler** ile **henüz doğrulanmamış gele
 
 ## Sıradaki aşamalar
 
-- [ ] Güncel README, model kartı, güvenlik ve yol haritası belgelerini commit etmek.
-- [ ] Public GitHub depo paylaşımından önce CSV, commit, secret ve lisans kontrolleri.
-- [ ] GitHub'a ilk `push`; GitHub Actions Python/React işlerinin gerçek Linux koşularını doğrulamak.
-- [ ] Lisans seçimi, ekran görüntüleri ve isteğe bağlı kısa demo videosu.
+- [x] Güncel README, model kartı, güvenlik ve yol haritası belgelerini commit etmek (v0.11).
+- [ ] Public GitHub depo paylaşımından önce tüm CSV ve commit geçmişi için kişisel veri, secret ve lisans kontrolleri (ilk örnekler ve sınırlı desen taraması yapıldı; kapsamlı denetim yapılmadı).
+- [x] GitHub'a ilk `push`; GitHub Actions Python/React işleri Linux üzerinde geçti (commit `414e5ae`).
+- [x] v0.12 için gerçek yerel React v0.8.2 ekran görüntülerinin belgelere hazırlanması.
+- [ ] Kod lisansı için sorumlu kişi/katkıcı onayı; `LICENSE` eklenmesi veya lisanssız politika kararı.
+- [ ] GitHub üzerinde `docs/screenshots/` görüntülerini doğrulamak ve release belgelerini commit etmek.
+- [ ] Görünürlüğü Public yapmadan önce [yayın kontrol listesi](RELEASE_CHECKLIST.md) üzerinden onay almak.
+- [ ] İsteğe bağlı kısa demo videosu.
 - [ ] Tam yeniden üretilebilir deney metadatası, bağımsız test protokolü ve sistematik hata analizi.
 - [ ] Bağımlılık taramaları, güvenlik ve erişilebilirlik testleri, eşzamanlı yük testi.
 - [ ] Üretim kimlik doğrulaması, oran sınırlama, KVKK süreçleri ve gerçek OOD/human-in-the-loop validasyonu **ayrı kapsam**.
