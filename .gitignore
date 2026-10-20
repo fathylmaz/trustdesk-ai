@@ -41,3 +41,6 @@ artifacts/*
 
 # Unused root Node lockfile
 /package-lock.json
+
+# Local documentation installation guide
+/KURULUM.md
