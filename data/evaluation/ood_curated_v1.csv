@@ -1,0 +1,57 @@
+probe_group,text
+weather,Will it rain this afternoon in Ankara?
+weather,What is the temperature expected to be next week?
+weather,Is there a thunderstorm warning for tomorrow?
+weather,Does the forecast predict snow this weekend?
+weather,How humid is the air in the city today?
+weather,When will the heatwave finally end?
+weather,Which weather app has accurate forecasts?
+weather,What time does the sun set this evening?
+coding,How do I create a Python virtual environment?
+coding,Why is my JavaScript function returning undefined?
+coding,Explain what a binary search tree is.
+coding,Can you help fix this CSS flexbox layout?
+coding,What does a Dockerfile do in a web application?
+coding,How do I push a commit to GitHub?
+coding,Write a unit test for this sorting function.
+coding,What is the difference between HTTP and HTTPS?
+travel,Which train should I take to get to Paris?
+travel,How long does the flight from Tokyo to Osaka take?
+travel,Find a hotel near the old town square.
+travel,Can I bring liquids through airport security?
+travel,Is the museum open on Sunday mornings?
+travel,Which hiking trail has the best mountain view?
+travel,How much luggage can I check on my flight?
+travel,Can you recommend a day trip near the coast?
+health,What exercises can improve my running endurance?
+health,How much water should I drink after exercising?
+health,What is the usual recovery time for sore muscles?
+health,Which foods contain a lot of dietary fiber?
+health,I have a headache; what should I consider?
+health,Can I train for a marathon in four months?
+health,How should I stretch before a workout?
+health,Explain the difference between sleep stages.
+home_food,How long should I boil an egg?
+home_food,What is the best way to remove coffee stains?
+home_food,Could you suggest a vegetarian dinner recipe?
+home_food,How do I repair a leaking kitchen faucet?
+home_food,Why are my houseplants turning yellow?
+home_food,How can I reduce food waste at home?
+home_food,What ingredients do I need to make bread?
+home_food,How do I clean a stainless steel pan?
+entertainment,Which films won awards at the festival?
+entertainment,Who wrote the novel Frankenstein?
+entertainment,Can you suggest a mystery book for teenagers?
+entertainment,When is the next concert at the arena?
+entertainment,Who scored the winning goal in that match?
+entertainment,What are the rules of a chess endgame?
+entertainment,Which instrument is easiest to learn as an adult?
+entertainment,How do I tune an acoustic guitar?
+shopping_nontechnical,What size running shoes should I purchase?
+shopping_nontechnical,How do I compare washing machine energy ratings?
+shopping_nontechnical,Is this jacket suitable for cold weather?
+shopping_nontechnical,Which desk chair is comfortable for home use?
+shopping_nontechnical,What is the warranty on a bicycle helmet?
+shopping_nontechnical,How do I choose a mattress for a guest room?
+shopping_nontechnical,Is there a discount on garden tools this month?
+shopping_nontechnical,Can you compare two wireless headphones?

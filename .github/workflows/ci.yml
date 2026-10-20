@@ -1,0 +1,46 @@
+name: TrustDesk CI (without model weights)
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[dev]'
+          python -m pip install transformers==4.57.6 safetensors==0.8.0
+      - name: Check Python syntax
+        run: python -m compileall -q src trustdesk_unified_api_v06.py trustdesk_transformer_api_v05.py
+      - name: Run unit tests without local GPU artifacts
+        run: python -m pytest -q
+
+  react-tests-and-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Test frontend
+        run: npm run test
+      - name: Build frontend
+        env:
+          VITE_API_BASE_URL: /api
+        run: npm run build

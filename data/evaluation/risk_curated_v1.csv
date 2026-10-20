@@ -1,0 +1,41 @@
+scenario,text,risk_expected
+lost_or_stolen_card,My bank card was stolen yesterday.,true
+lost_or_stolen_card,I lost my credit card at the airport.,true
+lost_or_stolen_card,My debit card is missing.,true
+lost_or_stolen_card,Someone took my payment card from my bag.,true
+account_takeover,I think my bank account was hacked.,true
+account_takeover,Someone logged into my account without permission.,true
+account_takeover,My banking app was compromised.,true
+account_takeover,Someone accessed my account this morning.,true
+suspicious_transaction,There is an unauthorized card payment.,true
+suspicious_transaction,A fraudulent transfer appeared in my history.,true
+suspicious_transaction,This is an unrecognised withdrawal.,true
+suspicious_transaction,The transaction is not mine.,true
+suspicious_transaction,I see a purchase I did not make.,true
+phishing_or_credentials,I clicked on a phishing link.,true
+phishing_or_credentials,I entered my password on a fake bank website.,true
+phishing_or_credentials,I shared my PIN with a stranger.,true
+phishing_or_credentials,I gave my one-time code to a caller.,true
+lost_device_access,I lost my phone and cannot access banking.,true
+lost_device_access,My stolen mobile has my bank account logged in.,true
+risk_synonym_edge,Somebody has been using my debit card behind my back.,true
+risk_synonym_edge,I think an intruder is controlling my money.,true
+risk_synonym_edge,My account was taken over last night.,true
+risk_synonym_edge,I sent my login credentials to an impostor.,true
+normal_request,What is the interest rate on a savings account?,false
+normal_request,How do I order a physical payment card?,false
+normal_request,When will my card arrive?,false
+normal_request,Why is my bank transfer pending?,false
+normal_request,How can I change my account nickname?,false
+normal_request,Does my debit card work abroad?,false
+normal_request,Is there a fee for withdrawing cash?,false
+normal_request,Can I request a card with another design?,false
+normal_request,I want to raise my contactless card limit.,false
+normal_request,Where can I see my statements?,false
+normal_request,How can I convert pounds to euros?,false
+normal_request,What are the exchange fees on weekends?,false
+negative_context,My card was not stolen; I just forgot my PIN.,false
+negative_context,This is not a phishing attempt; I want to update my email.,false
+negative_context,How do I prevent fraudulent transfers in general?,false
+negative_context,"I did not share my password, but I forgot it.",false
+normal_request,How long does a standard card replacement take?,false

@@ -1,0 +1,42 @@
+# TrustDesk AI v0.10 - LOCAL CPU demonstration only.
+# No public publishing or automated bank operations.
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.backend
+    environment:
+      TRUSTDESK_UNIFIED_DEVICE: cpu
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    volumes:
+      - type: bind
+        source: ./artifacts
+        target: /app/artifacts
+        read_only: true
+    # Backend is private to the Compose network; there is no host port.
+    expose:
+      - "8002"
+    restart: "no"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8002/health',timeout=5).read()"
+      interval: 15s
+      timeout: 10s
+      retries: 12
+      start_period: 120s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8080:8080"
+    restart: "no"

@@ -1,0 +1,4 @@
+# First install the compatible CUDA-enabled torch build using official PyTorch selector.
+# Do not reinstall torch as CPU-only over your CUDA build.
+transformers>=4.46,<5
+safetensors>=0.4,<1

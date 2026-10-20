@@ -1,0 +1,43 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+data/raw/*.csv
+artifacts/*
+!artifacts/.gitkeep
+.env
+.DS_Store
+
+# Local environment and secrets
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local model weights and checkpoints
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Raw local datasets
+/data/raw/*
+!/data/raw/.gitkeep
+
+# Temporary outputs and backups
+*.log
+*.sqlite
+*.sqlite3
+/frontend_yedek_*/
+
+# Temporary installation notes
+/KURULUM_VE_ACIKLAMALAR*.md
+/KURULUM_VE_DEGISIKLIKLER*.md
+/MANIFEST.txt
+
+# Unused root Node lockfile
+/package-lock.json
