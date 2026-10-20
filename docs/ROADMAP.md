@@ -20,8 +20,8 @@ Bu dosya, **yerel olarak doğrulanan işler** ile **henüz doğrulanmamış gele
 - [ ] Public GitHub depo paylaşımından önce tüm CSV ve commit geçmişi için kişisel veri, secret ve lisans kontrolleri (ilk örnekler ve sınırlı desen taraması yapıldı; kapsamlı denetim yapılmadı).
 - [x] GitHub'a ilk `push`; GitHub Actions Python/React işleri Linux üzerinde geçti (commit `414e5ae`).
 - [x] v0.12 için gerçek yerel React v0.8.2 ekran görüntülerinin belgelere hazırlanması.
-- [ ] Kod lisansı için sorumlu kişi/katkıcı onayı; `LICENSE` eklenmesi veya lisanssız politika kararı.
-- [ ] GitHub üzerinde `docs/screenshots/` görüntülerini doğrulamak ve release belgelerini commit etmek.
+- [x] Proje sahibinin teyidiyle tek insan geliştirici belirlendi; MIT lisansı seçildi ve `LICENSE` dosyası v0.12.2 paketinde hazırlandı (GitHub push henüz ayrı bir adım).
+- [x] v0.12 portföy belgeleri ve gerçek ekran görüntüleri GitHub'a commit/push edildi (`75ed59c`); sonraki README dil güncellemesi de gönderildi (`953ca46`).
 - [ ] Görünürlüğü Public yapmadan önce [yayın kontrol listesi](RELEASE_CHECKLIST.md) üzerinden onay almak.
 - [ ] İsteğe bağlı kısa demo videosu.
 - [ ] Tam yeniden üretilebilir deney metadatası, bağımsız test protokolü ve sistematik hata analizi.
@@ -31,3 +31,7 @@ Bu dosya, **yerel olarak doğrulanan işler** ile **henüz doğrulanmamış gele
 ## Katkıların belgelenmesi
 
 Katkı sahipleri geçmiş Git commit'leri ve PR'ları ile kanıtlanmalı; bireysel katkı yapılmadan CV'de ortak başarı kişisel çalışma gibi gösterilmemelidir. Başlangıçtaki görev paylaşımı taslakları gerçekleşmiş katkı kaydı değildir.
+
+## Telif ve katkı
+
+Kaynak kod için [MIT lisansı](../LICENSE) seçilmiştir. Proje sahibi Fatih Yılmaz tek insan geliştirici olduğunu doğrulamıştır; ayrıntılar [Katkı Sahipleri](CONTRIBUTORS.md) belgesindedir. Bu kayıt, Python/JavaScript bağımlılıkları veya BANKING77 veri kümesi lisanslarını değiştirmez.

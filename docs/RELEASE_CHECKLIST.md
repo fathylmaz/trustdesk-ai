@@ -20,9 +20,9 @@ Bu liste **özel depoyu Public yapmadan önce** kontrol edilmelidir. Kodun GitHu
 
 ## Lisans, katkı, görünürlük
 
-- [ ] Kaynak kodun yeniden kullanılabilirliği için tercih edilen yazılım lisansını **katkı sahiplerinin onayıyla** belirle. Veri kümesinin CC BY 4.0 lisansı kodu lisanslamaz.
-- [ ] MIT / Apache-2.0 / özel koşullar / şimdilik `LICENSE` yok seçeneklerinden bilinçli karar ver; onay olmadan `LICENSE` dosyası ekleme.
-- [ ] Kimlerin hangi katkıları yaptığı doğrulanabiliyor mu? Katkı ve iş birliği metnini kişilerle onayla.
+- [x] Proje sahibi tek insan geliştirici olduğunu doğruladı; yazılım lisansı olarak **MIT** seçildi. BANKING77 veri kümesinin CC BY 4.0 lisansı ayrıdır.
+- [x] MIT lisansı seçildi ve `LICENSE` belgesi hazırlandı. **GitHub’a commit/push edilmesi ayrıca doğrulanacak.**
+- [x] Tek insan geliştirici/bakım sorumlusu Fatih Yılmaz olarak kullanıcı tarafından doğrulandı; `docs/CONTRIBUTORS.md` hazırlandı.
 - [ ] GitHub Repository > Settings > General > Change repository visibility adımını ancak yukarıdakiler tamamlandıktan sonra kullan.
 - [ ] Public yapıldıktan sonra dışarıdan açılan repo bağlantıları, README görselleri ve Actions badge'i kontrol et.
 
@@ -33,9 +33,15 @@ git --no-pager diff --stat
 git diff --check
 git status --short
 # Belgeleri ekledikten sonra:
-git add README.md docs/ROADMAP.md docs/CV_GUIDANCE.md docs/RELEASE_CHECKLIST.md docs/screenshots/
+git add LICENSE README.md docs/CONTRIBUTORS.md docs/ROADMAP.md docs/CV_GUIDANCE.md docs/RELEASE_CHECKLIST.md
 git diff --cached --check
 git --no-pager diff --cached --name-only
 ```
 
 **Not:** `git push`, `Public` görünürlük değişikliği ve yazılım lisansı seçimi ayrı kararlardır.
+
+## v0.12.2 ek kontrol
+
+- [ ] MIT telif satırı (`Copyright (c) 2026 Fatih Yılmaz`), iki dilli README ve katkı belgesini GitHub üzerinde kontrol et.
+- [ ] `git push` sonrası ilgili GitHub Actions işlerinin başarılı olduğunu doğrula.
+- [ ] Private → Public geçişinden önce kapsamlı kişisel veri/secret/lisans ve ekran görüntüsü denetimini tamamla; depoyu onaysız açma.

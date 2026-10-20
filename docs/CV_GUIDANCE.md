@@ -24,5 +24,5 @@ Bu ifadeler yalnızca **kişinin gerçekten yaptığı iş** için kullanılmal�
 - [x] GitHub'a güncel README ve model kartını ekle.
 - [x] İlk push sonrası Actions sonucunu kontrol et.
 - [x] v0.12 belge paketine gerçek arayüz ekran görüntüleri ve mimari anlatımını ekle (GitHub push sonrası görünümü doğrula).
-- [ ] Katkıları kişiye göre ayrı ayrı belgele.
-- [ ] Kullanılacak proje lisansını bilinçli olarak belirle.
+- [x] Mevcut tek insan geliştirici ve bakım sorumlusunu `docs/CONTRIBUTORS.md` içinde belirt (proje sahibinin beyanına göre).
+- [x] Proje sahibi MIT lisansını seçti; `LICENSE` ve iki dilli README v0.12.2 paketinde hazırlandı (push ayrıca doğrulanacak).

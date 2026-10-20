@@ -180,8 +180,8 @@ artifacts/                     Local checkpoints/reports (excluded from Git)
 - **BANKING77:** PolyAI dataset, attributed to Casanueva et al. (2020), *Efficient Intent Detection with Dual Sentence Encoders*, NLP4ConvAI / ACL. Dataset is licensed under **CC BY 4.0**; original raw dataset is not redistributed by this repository.
 - **Language:** models evaluated on English messages. Turkish display labels are **not** Turkish language model support.
 - **Risks:** OOD text can receive a forced banking class; class scores are uncalibrated for production decision-making; no human review workflow, public authentication, rate limiting, TLS, or financial integrations are implemented.
-- **Code license:** **No software license has been chosen yet.** Do not infer permission to redistribute or reuse code from public visibility or from the dataset's separate CC BY 4.0 license. A `LICENSE` file should be added only after the maintainers choose and approve its terms.
-- **Attribution:** Individual contributions should be credited according to verified work and contributors' agreement, not inferred from project plans or shared development accounts.
+- **Code license:** The original TrustDesk AI source code is available under the **[MIT License](LICENSE)**, Copyright (c) 2026 Fatih Yılmaz. The separate **CC BY 4.0** license governs the BANKING77 dataset; third-party dependencies retain their respective licenses.
+- **Attribution:** Fatih Yılmaz is the sole human developer and maintainer as confirmed by the project owner. Repository commits use [fathylmaz](https://github.com/fathylmaz). See [Contributors](docs/CONTRIBUTORS.md).
 
 [Model Card](docs/MODEL_CARD.md) · [Security / Güvenlik](docs/SECURITY.md) · [Roadmap / Yol Haritası](docs/ROADMAP.md) · [CV & Contribution Guide](docs/CV_GUIDANCE.md) · [Pre-publication checklist](docs/RELEASE_CHECKLIST.md)
 
@@ -353,7 +353,7 @@ artifacts/                        Yerel checkpoint/raporlar (Git dışında)
 - **BANKING77:** PolyAI veri kümesi, Casanueva ve diğerleri (2020), *Efficient Intent Detection with Dual Sentence Encoders*, NLP4ConvAI / ACL. Veri lisansı **CC BY 4.0**; özgün ham veri bu depoda yeniden dağıtılmaz.
 - **Dil:** Modeller İngilizce mesajlar üzerinde değerlendirilmiştir. Türkçe arayüz etiketleri, **Türkçe dilinde niyet tanıma desteği** anlamına gelmez.
 - **Riskler:** Konu dışı metinlere zorunlu bankacılık etiketi atanabilir; sınıf skorları üretim kararlarında kullanılacak şekilde kalibre edilmemiştir. İnsan inceleme iş akışı, herkese açık kimlik doğrulama, oran sınırlama, TLS veya finansal entegrasyon bulunmamaktadır.
-- **Kod lisansı:** **Henüz yazılım lisansı seçilmemiştir.** Deponun herkese açık olması veya veri kümesinin CC BY 4.0 lisansı, kodu yeniden kullanma/dağıtma izni verildiği anlamına gelmez. `LICENSE` dosyası ancak proje sahipleri şartlarını onayladıktan sonra eklenmelidir.
-- **Katkı sahipliği:** Bireysel katkılar, yalnızca doğrulanmış çalışma ve katkı sağlayanların mutabakatıyla belirtilmelidir. Proje planlarından veya ortak geliştirme hesaplarından katkı varsayılmamalıdır.
+- **Kod lisansı:** TrustDesk AI projesinin özgün kaynak kodları **[MIT Lisansı](LICENSE)** ile paylaşılır; Copyright (c) 2026 Fatih Yılmaz. BANKING77 veri kümesinin **CC BY 4.0** lisansı ayrıdır; üçüncü taraf bağımlılıklar kendi lisanslarına tabidir.
+- **Katkı sahipliği:** Proje sahibinin beyanına göre tek insan geliştirici ve bakım sorumlusu Fatih Yılmaz’dır. GitHub commit’leri [fathylmaz](https://github.com/fathylmaz) hesabında kayıtlıdır. Ayrıntılar için [Katkı Sahipleri](docs/CONTRIBUTORS.md).
 
 [Model Kartı](docs/MODEL_CARD.md) · [Güvenlik](docs/SECURITY.md) · [Yol Haritası](docs/ROADMAP.md) · [CV ve Katkı Rehberi](docs/CV_GUIDANCE.md) · [Yayın Öncesi Kontrol Listesi](docs/RELEASE_CHECKLIST.md)
